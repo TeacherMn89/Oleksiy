@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+   font-family: 'Comic Sans MS', cursive;;
+   background-color: #f4f4f4; /* изменено цвет фона */
+   margin: 0;
+   padding: 0;
+}
+
+
+p {
+  margin-top: 10px;
+  color: #555; /* изменен цвет текста */
+}
+p:hover{
+  color:turquoise;
+}
+
+
+
+
+/* Стилизация пятен */
+.footer-content, .container, .section-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Стилизация кнопок */
+.button-container button {
+  background-color: turquoise;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Comic Sans MS', cursive;;
+}
+
+
+.button-container button:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+/* Стилизация футера */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.contact-info, .social-links, .sitemap, .other-links {
+  margin-bottom: 10px;
+}
+
+
+.social-links a, .sitemap a, .other-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+/* Стилизация заголовка */
+header {
+  background-color: turquoise;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+h1 {
+  margin: 0;
+}
+
+
+/* Навигационное меню */
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+
+p{
+   text-align: center;
+}
+
+
+
+.shapes {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px; /* Налаштування відступу від інших елементів */
+}
+
+
+.circle,
+.rectangle,
+.triangle {
+   width: 50px; /* Розмір фігур */
+   height: 50px;
+}
+
+
+.circle {
+   background-color: #ff6384; /* Колір кола */
+   border-radius: 50%; /* Заокруглені кути для створення кола */
+}
+
+
+.rectangle {
+   background-color: #36a2eb; /* Колір прямокутника */
+}
+
+
+.triangle {
+   width: 0;
+   height: 0;
+   border-left: 25px solid transparent; /* Ширина лівої границі */
+   border-right: 25px solid transparent; /* Ширина правої границі */
+   border-bottom: 50px solid #ffcd56; /* Ширина нижньої границі трикутника і його колір */
+}
+
+
+.cross {
+   width: 50px; /* Ширина крестика */
+   height: 50px; /* Висота крестика */
+   position: relative;
+}
+
+
+.cross:before,
+.cross:after {
+   content: '';
+   position: absolute;
+   background-color: #4CAF50; /* Колір крестика */
+   width: 10px; /* Ширина ліній крестика */
+   height: 50px; /* Довжина ліній крестика */
+}
+
+
+.cross:before {
+   transform: rotate(45deg); /* Поворот першої лінії крестика */
+}
+
+
+.cross:after {
+   transform: rotate(-45deg); /* Поворот другої лінії крестика */
+}
+
+
+.shapes .circle,
+.shapes .rectangle,
+.shapes .triangle,
+.shapes .cross {
+    transition: transform 0.5s ease; /* Плавний перехід при зміні transform (обертання) протягом 0.5 секунди */
+}
+
+.shapes .circle {
+    transition-delay: 0.1s; /* Затримка для круга для створення плавного ефекту */
+}
+
+.shapes .cross {
+    transition-delay: 0.2s; /* Затримка для крестика */
+}
+
+.shapes:hover .circle,
+.shapes:hover .rectangle,
+.shapes:hover .triangle,
+.shapes:hover .cross {
+    transform: rotate(180deg); /* Обертання на 180 градусів при наведенні миші */
+}
